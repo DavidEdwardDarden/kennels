@@ -1,9 +1,10 @@
 import React from "react"
-import "./Animal.css"
+import "./Customer.css"
 
-export const CustomerCard = () => (
+export const CustomerCard = ({customer, handleDeleteCustomer}) => (
     <section className="customer">
-        <h3 className="customer__name">James McDuck</h3>
-      
+        <h3 className="customer__name">{customer.name}</h3>
+        <button type="button" onClick={() => handleDeleteCustomer(customer.id)}>Unsave</button>
     </section>
 )
+
