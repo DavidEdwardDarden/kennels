@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 //import the components we will need
-import { CustomerCard } from './customerCard';
+import { CustomerCard } from './CustomerCard';
 import { getAllCustomers, deleteCustomer } from '../../modules/CustomerManager';
 
 export const CustomerList = () => {
@@ -12,12 +12,12 @@ export const CustomerList = () => {
     //  use the setcustomers function to update state
     return getAllCustomers()
     .then(customersFromAPI => {
-      setcustomers(customersFromAPI)
+      setCustomers(customersFromAPI)
     });
   };
 
   const handleDeleteCustomer = id => {
-    deletecustomer(id)
+    deleteCustomer(id)
     .then(() => getAllCustomers().then(setCustomers));
     //or you could call getcustomers() after the => and delete the rest
 };

@@ -1,17 +1,61 @@
 {
     "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle"},
-        { "id": 2, "name": "Decker", "breed": "German Shepherd" },
-        { "id": 3, "name": "Esme", "breed": "Pitbull" }
+        {
+            "id": 1,
+            "name": "Doodles",
+            "breed": "Poodle",
+            "locationId": 1,
+            "customerId": 1
+        },
+        {
+            "id": 2,
+            "name": "Decker",
+            "breed": "German Shepherd",
+            "locationId": 2,
+            "customerId": 2
+        },
+        {
+            "id": 3,
+            "name": "Esme",
+            "breed": "Pitbull",
+            "locationId": 3,
+            "customerId": 3
+        }
     ],
     "customers": [
         {
             "id": 1,
             "name": "Hannah Hall",
             "address": "7002 Chestnut Ct"
+        },
+        {
+            "id": 2,
+            "name": "Bob Dole",
+            "address": "1988 America St"
+        },
+        {
+            "id": 3,
+            "name": "John Doe",
+            "address": "2003 Ovoca Rd"
         }
     ],
-    "employees": [],
+    "employees": [
+        {
+            "id": 1,
+            "name": "John Johnson",
+            "section": "front end"
+        },
+        {
+            "id": 2,
+            "name": "Ron Swanson",
+            "section": "back end"
+        },
+        {
+            "id": 3,
+            "name": "Juan Flaunson",
+            "section": "management"
+        }
+    ],
     "locations": [
         {
             "id": 1,
@@ -22,6 +66,11 @@
             "id": 2,
             "name": "Nashville South",
             "address": "209 Emory Drive"
+        },
+        {
+            "id": 3,
+            "name": "Nashville East",
+            "address": "101 East St"
         }
     ]
 }

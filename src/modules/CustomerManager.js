@@ -12,7 +12,7 @@ const remoteURL = "http://localhost:5002"
     .then(res => res.json())
   }
 
-  export const deletecustomer = (id) => {
+  export const deleteCustomer = (id) => {
     return fetch(`${remoteURL}/customers/${id}`, {
       method: "DELETE"
     }).then(result => result.json())
