@@ -1,7 +1,7 @@
-import React, { useHistory, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getAnimalById } from '../../modules/AnimalManager';
 import './AnimalDetail.css';
-import { useParams } from "react-router-dom"
+import { useHistory, useParams } from "react-router-dom"
 import { deleteAnimal } from "../../modules/AnimalManager"
 
 export const AnimalDetail = () => {
@@ -42,7 +42,7 @@ export const AnimalDetail = () => {
       <div className="animal__location">Location: {animal.location?.name}</div>
       <div className="animal__owner">Customer: {animal.customer?.name}</div>
       <button type="button" disabled={isLoading} onClick={handleDelete}>
-          Discharge
+          Delete
         </button>
     </section>
   );

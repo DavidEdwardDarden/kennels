@@ -1,7 +1,7 @@
-import React, { useHistory, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getEmployeeById } from '../../modules/EmployeeManager';
 import './EmployeeDetail.css';
-import { useParams } from "react-router-dom"
+import { useHistory, useParams } from "react-router-dom"
 import { deleteEmployee } from "../../modules/EmployeeManager"
 
 export const EmployeeDetail = () => {
@@ -40,9 +40,9 @@ export const EmployeeDetail = () => {
       <div className="employee__breed">{employee.breed}</div>
       {/* What's up with the question mark???? See below.*/}
       <div className="employee__location">Location: {employee.location?.name}</div>
-      <div className="employee__owner">Customer: {employee.customer?.name}</div>
+      {/* <div className="employee__owner">Customer: {employee.customer?.name}</div> */}
       <button type="button" disabled={isLoading} onClick={handleDelete}>
-          Discharge
+          Delete
         </button>
     </section>
   );

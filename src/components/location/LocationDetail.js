@@ -1,7 +1,7 @@
-import React, { useHistory, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getLocationById } from '../../modules/LocationManager';
 import './LocationDetail.css';
-import { useParams } from "react-router-dom"
+import { useHistory, useParams } from "react-router-dom"
 import { deleteLocation } from "../../modules/LocationManager"
 
 export const LocationDetail = () => {
@@ -18,9 +18,8 @@ export const LocationDetail = () => {
       .then(location => {
         setlocation({
           name: location.name,
-          breed: location.breed,
           location: location.location,
-          customer: location.customer
+          hours: location.hours
         });
         setIsLoading(false);
       });
@@ -37,12 +36,10 @@ export const LocationDetail = () => {
   return (
     <section className="location">
       <h3 className="location__name">{location.name}</h3>
-      <div className="location__breed">{location.breed}</div>
       {/* What's up with the question mark???? See below.*/}
-      <div className="location__location">Location: {location.location?.name}</div>
-      <div className="location__owner">Customer: {location.customer?.name}</div>
+      <div className="location__location">Hours: {location.hours}</div>
       <button type="button" disabled={isLoading} onClick={handleDelete}>
-          Discharge
+          Delete
         </button>
     </section>
   );
