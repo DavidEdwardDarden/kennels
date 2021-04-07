@@ -20,6 +20,27 @@
             "breed": "Pitbull",
             "locationId": 3,
             "customerId": 3
+        },
+        {
+            "id": 4,
+            "name": "Deletus",
+            "breed": "Poo Dell",
+            "locationId": 4,
+            "customerId": 4
+        },
+        {
+            "id": 5,
+            "name": "Delete Me",
+            "breed": "German Sheph",
+            "locationId": 5,
+            "customerId": 5
+        },
+        {
+            "id": 6,
+            "name": "Del Eat Me",
+            "breed": "Pitt Bowl",
+            "locationId": 6,
+            "customerId": 6
         }
     ],
     "customers": [
@@ -37,6 +58,21 @@
             "id": 3,
             "name": "John Doe",
             "address": "2003 Ovoca Rd"
+        },
+        {
+            "id": 4,
+            "name": "Delete Yall",
+            "address": "1001 Coconut Ct"
+        },
+        {
+            "id": 5,
+            "name": "Dell Eat",
+            "address": "1876 Russia Rd"
+        },
+        {
+            "id": 6,
+            "name": "Delete Doe",
+            "address": "9021 Oh Kay Rd"
         }
     ],
     "employees": [
@@ -53,6 +89,21 @@
         {
             "id": 3,
             "name": "Juan Flaunson",
+            "section": "management"
+        },
+        {
+            "id": 4,
+            "name": "Delete Meson",
+            "section": "front end"
+        },
+        {
+            "id": 5,
+            "name": "Dell Eat",
+            "section": "back end"
+        },
+        {
+            "id": 6,
+            "name": "Deletus Maximus",
             "section": "management"
         }
     ],
@@ -71,6 +122,21 @@
             "id": 3,
             "name": "Nashville East",
             "address": "101 East St"
+        },
+        {
+            "id": 4,
+            "name": "Delete North",
+            "address": "1234 Test Pike"
+        },
+        {
+            "id": 5,
+            "name": "Delete South",
+            "address": "999 Test Drive"
+        },
+        {
+            "id": 6,
+            "name": "Delete East",
+            "address": "101 Delete St"
         }
     ]
 }
