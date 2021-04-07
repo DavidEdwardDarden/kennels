@@ -1,142 +1,123 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Doodles",
-            "breed": "Poodle",
-            "locationId": 1,
-            "customerId": 1
-        },
-        {
-            "id": 2,
-            "name": "Decker",
-            "breed": "German Shepherd",
-            "locationId": 2,
-            "customerId": 2
-        },
-        {
-            "id": 3,
-            "name": "Esme",
-            "breed": "Pitbull",
-            "locationId": 3,
-            "customerId": 3
-        },
-        {
-            "id": 4,
-            "name": "Deletus",
-            "breed": "Poo Dell",
-            "locationId": 4,
-            "customerId": 4
-        },
-        {
-            "id": 5,
-            "name": "Delete Me",
-            "breed": "German Sheph",
-            "locationId": 5,
-            "customerId": 5
-        },
-        {
-            "id": 6,
-            "name": "Del Eat Me",
-            "breed": "Pitt Bowl",
-            "locationId": 6,
-            "customerId": 6
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Hannah Hall",
-            "address": "7002 Chestnut Ct"
-        },
-        {
-            "id": 2,
-            "name": "Bob Dole",
-            "address": "1988 America St"
-        },
-        {
-            "id": 3,
-            "name": "John Doe",
-            "address": "2003 Ovoca Rd"
-        },
-        {
-            "id": 4,
-            "name": "Delete Yall",
-            "address": "1001 Coconut Ct"
-        },
-        {
-            "id": 5,
-            "name": "Dell Eat",
-            "address": "1876 Russia Rd"
-        },
-        {
-            "id": 6,
-            "name": "Delete Doe",
-            "address": "9021 Oh Kay Rd"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "John Johnson",
-            "section": "front end"
-        },
-        {
-            "id": 2,
-            "name": "Ron Swanson",
-            "section": "back end"
-        },
-        {
-            "id": 3,
-            "name": "Juan Flaunson",
-            "section": "management"
-        },
-        {
-            "id": 4,
-            "name": "Delete Meson",
-            "section": "front end"
-        },
-        {
-            "id": 5,
-            "name": "Dell Eat",
-            "section": "back end"
-        },
-        {
-            "id": 6,
-            "name": "Deletus Maximus",
-            "section": "management"
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "address": "8422 Johnson Pike"
-        },
-        {
-            "id": 2,
-            "name": "Nashville South",
-            "address": "209 Emory Drive"
-        },
-        {
-            "id": 3,
-            "name": "Nashville East",
-            "address": "101 East St"
-        },
-        {
-            "id": 4,
-            "name": "Delete North",
-            "address": "1234 Test Pike"
-        },
-        {
-            "id": 5,
-            "name": "Delete South",
-            "address": "999 Test Drive"
-        },
-        {
-            "id": 6,
-            "name": "Delete East",
-            "address": "101 Delete St"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "locationId": 1,
+      "customerId": 1
+    },
+    {
+      "id": 2,
+      "name": "Bitey",
+      "breed": "Pitbull",
+      "locationId": 2,
+      "customerId": 2
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull",
+      "locationId": 3,
+      "customerId": 3
+    },
+    {
+      "id": 4,
+      "name": "Deletus",
+      "breed": "Poo Dell",
+      "locationId": 4,
+      "customerId": 4
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hannah Hall",
+      "address": "7002 Chestnut Ct"
+    },
+    {
+      "id": 2,
+      "name": "Bob Dole",
+      "address": "1988 America St"
+    },
+    {
+      "id": 3,
+      "name": "John Doe",
+      "address": "2003 Ovoca Rd"
+    },
+    {
+      "id": 4,
+      "name": "Delete Yall",
+      "address": "1001 Coconut Ct"
+    },
+    {
+      "id": 5,
+      "name": "Dell Eat",
+      "address": "1876 Russia Rd"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Johnson",
+      "section": "front end",
+      "locationId": 1
+    },
+    {
+      "id": 2,
+      "name": "Ron Swanson",
+      "section": "back end",
+      "locationId": 2
+    },
+    {
+      "id": 3,
+      "name": "Juan Flaunson",
+      "section": "management",
+      "locationId": 3
+    },
+    {
+      "id": 4,
+      "name": "Delete Meson",
+      "section": "front end",
+      "locationId": 4
+    },
+    {
+      "id": 5,
+      "name": "Dell Eat",
+      "section": "back end",
+      "locationId": 4
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike",
+      "hours":"9am to 5pm"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "106 South St",
+      "hours":"9am to 5pm"
+    },
+    {
+      "id": 3,
+      "name": "Nashville East",
+      "address": "101 East St",
+      "hours":"9am to 5pm"
+    },
+    {
+      "id": 4,
+      "name": "Delete North",
+      "address": "1234 Test Pike",
+      "hours":"9am to 5pm"
+    },
+    {
+      "id": 5,
+      "name": "Delete South",
+      "address": "999 Test Drive",
+      "hours":"9am to 5pm"
+    }
+  ]
 }

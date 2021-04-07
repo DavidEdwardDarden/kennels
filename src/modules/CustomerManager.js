@@ -3,7 +3,7 @@ const remoteURL = "http://localhost:5002"
 
   export const getCustomerById = (customerID) => {
     //be sure your customers have good data and related to a location and customer
-   return fetch(`${remoteURL}/customers/${customerID}?_expand=location&_expand=customer`)
+   return fetch(`${remoteURL}/customers/${customerID}`)
     .then(res => res.json())
   }
 
