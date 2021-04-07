@@ -4,6 +4,6 @@
   }
 
   button:disabled,
-button:disabled:hover {
-  background-color: lightgray;
-}
+  button:disabled:hover {
+    background-color: lightgray;
+  }
