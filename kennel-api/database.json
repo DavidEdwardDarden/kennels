@@ -1,12 +1,12 @@
 {
   "animals": [
     {
-      "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle",
-      "locationId": 1,
-      "customerId": 1
-    },
+        "id": 1,
+        "name": "Billbo Baggins",
+        "breed": "Hobbit",
+        "locationId": 1,
+        "customerId": 1
+      },
     {
       "id": 2,
       "name": "Bitey",
@@ -31,29 +31,34 @@
   ],
   "customers": [
     {
-      "id": 1,
-      "name": "Hannah Hall",
-      "address": "7002 Chestnut Ct"
-    },
+        "id": 1,
+        "name": "Bob Barker",
+        "address": "1999 Easy St",
+        "email": "bob@barker.com"
+      },
     {
       "id": 2,
       "name": "Bob Dole",
-      "address": "1988 America St"
+      "address": "1988 America St",
+      "email": "America@Freedom.Us"
     },
     {
       "id": 3,
       "name": "John Doe",
-      "address": "2003 Ovoca Rd"
+      "address": "2003 Ovoca Rd",
+      "email": "johndoe@noone.com"
     },
     {
       "id": 4,
       "name": "Delete Yall",
-      "address": "1001 Coconut Ct"
+      "address": "1001 Coconut Ct",
+      "email": "rodroddy@impressive.gov.com"
     },
     {
       "id": 5,
       "name": "Dell Eat",
-      "address": "1876 Russia Rd"
+      "address": "1876 Russia Rd",
+      "email": "dell@eat.com"
     }
   ],
   "employees": [
@@ -93,31 +98,31 @@
       "id": 1,
       "name": "Nashville North",
       "address": "8422 Johnson Pike",
-      "hours":"9am to 5pm"
+      "hours": "9am to 5pm"
     },
     {
       "id": 2,
       "name": "Nashville South",
       "address": "106 South St",
-      "hours":"9am to 5pm"
+      "hours": "9am to 5pm"
     },
     {
       "id": 3,
       "name": "Nashville East",
       "address": "101 East St",
-      "hours":"9am to 5pm"
+      "hours": "9am to 5pm"
     },
     {
       "id": 4,
       "name": "Delete North",
       "address": "1234 Test Pike",
-      "hours":"9am to 5pm"
+      "hours": "9am to 5pm"
     },
     {
       "id": 5,
       "name": "Delete South",
       "address": "999 Test Drive",
-      "hours":"9am to 5pm"
+      "hours": "9am to 5pm"
     }
   ]
 }

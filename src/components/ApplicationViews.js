@@ -2,13 +2,14 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "./Home"
 import { AnimalList } from "./animal/AnimalList"
-import {AnimalDetail} from "./animal/AnimalDetail"
+import { AnimalDetail } from "./animal/AnimalDetail"
 import { CustomerList } from "./customer/CustomerList"
 import { CustomerDetail } from "./customer/CustomerDetail"
 import { EmployeeList } from "./employee/EmployeeList"
 import { EmployeeDetail } from "./employee/EmployeeDetail"
 import { LocationList } from "./location/LocationList"
 import { LocationDetail } from "./location/LocationDetail"
+import { AnimalForm } from './animal/AnimalForm'
 
 export const ApplicationViews = () => {
     return (
@@ -51,7 +52,11 @@ export const ApplicationViews = () => {
                 <LocationDetail />
             </Route>
 
-                        {/*
+            <Route path="/animals/create">
+                <AnimalForm />
+            </Route>
+
+            {/*
             This is a new route to handle a URL with the following pattern:
             http://localhost:3000/animals/1
 
