@@ -1,12 +1,12 @@
 {
   "animals": [
     {
-        "id": 1,
-        "name": "Billbo Baggins",
-        "breed": "Hobbit",
-        "locationId": 1,
-        "customerId": 1
-      },
+      "id": 1,
+      "name": "Bilbo Baggins",
+      "breed": "Hobbit",
+      "locationId": 1,
+      "customerId": 1
+    },
     {
       "id": 2,
       "name": "Bitey",
@@ -31,11 +31,11 @@
   ],
   "customers": [
     {
-        "id": 1,
-        "name": "Bob Barker",
-        "address": "1999 Easy St",
-        "email": "bob@barker.com"
-      },
+      "id": 1,
+      "name": "Bob Barker",
+      "address": "1999 Easy St",
+      "email": "bob@barker.com"
+    },
     {
       "id": 2,
       "name": "Bob Dole",
@@ -59,6 +59,12 @@
       "name": "Dell Eat",
       "address": "1876 Russia Rd",
       "email": "dell@eat.com"
+    },
+    {
+      "email": "davidedarden83@gmail.com",
+      "name": "David Darden",
+      "id": 6,
+      "address": "111 One Way"
     }
   ],
   "employees": [
