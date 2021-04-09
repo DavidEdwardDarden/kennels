@@ -130,5 +130,11 @@
       "address": "999 Test Drive",
       "hours": "9am to 5pm"
     }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Bob Dole"
+    }
   ]
 }
