@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router';
 import { addAnimal } from '../../modules/AnimalManager';
 import './AnimalForm.css'
+import { getAllLocations } from "../../modules/LocationManager"
 
 export const AnimalForm = () => {
 	// State will contain both animal data as well as an isLoading flag.
@@ -44,8 +45,10 @@ export const AnimalForm = () => {
 	}
 
     useEffect(() => {
+		getAllLocations()
+		.then(setLocations());
 		//load location data and setState
-	}, []);
+	}, [locations]);
 
      useEffect(() => {
 		//load customer data and setState

@@ -14,9 +14,14 @@ import { AnimalEditForm } from './animal/AnimalEditForm'
 import { Register } from "../components/auth/Register"
 import { Login } from "../components/auth/Login"
 
-const isAuthenticated = () => sessionStorage.getItem("kennel_customer") !== null;
 
 export const ApplicationViews = () => {
+    const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("kennel_customer") !== null)
+
+    const setAuthUser = (user) => {
+        sessionStorage.setItem("kennel_customer", JSON.stringify(user))
+        setIsAuthenticated(sessionStorage.getItem("kennel_customer") !== null)
+    }
     return (
         <>
             {/* Render the location list when http://localhost:3000/ */}
@@ -26,19 +31,15 @@ export const ApplicationViews = () => {
 
             {/* Render the animal list when http://localhost:3000/animals */}
             <Route exact path="/animals">
-                if(isAuthenticated()) {
-                    <AnimalList />
-                }else {
-                    <Redirect to="/login" />
-                }
+                {isAuthenticated ? <AnimalList /> : <Redirect to="/login" />}
             </Route>
 
             <Route path="/login">
-                <Login />
+                <Login setAuthUser={setAuthUser} />
             </Route>
 
             <Route path="/register">
-                <Register />
+                <Register setAuthUser={setAuthUser} />
             </Route>
 
             <Route exact path="/animals/:animalId(\d+)/edit">
